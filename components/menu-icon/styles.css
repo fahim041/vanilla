@@ -10,6 +10,7 @@
   height: 5px;
   background-color: #333;
   margin: 6px 0;
+  transition: all 0.4s linear;
 }
 
 .change .bar1 {
