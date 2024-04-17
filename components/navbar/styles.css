@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar-desktop {
+  display: flex;
+  background-color: #333;
+  justify-content: left;
+}
+
+.navbar-desktop a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar-desktop a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar-desktop a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.navbar-mobile {
+  display: none;
+  background-color: #333;
+  justify-content: right;
+}
+
+.navbar-mobile .icon {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar-mobile-list a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar-mobile-list a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar-mobile-list a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.navbar-mobile-list {
+  display: none;
+  background-color: #333;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-desktop {
+    display: none;
+  }
+
+  .navbar-mobile {
+    display: flex;
+  }
+
+  .navbar-mobile-list {
+    display: none;
+  }
+
+  .show {
+    display: flex;
+  }
+}
