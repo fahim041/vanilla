@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./index.js"></script>
+    <link href="./index.css" rel="stylesheet" />
+    <title>Vertical Tabs</title>
+  </head>
+  <body>
+    <div class="tab">
+      <div class="button-group">
+        <button
+          class="tablinks"
+          id="default-tab"
+          onclick="openTab(event, 'tab1')"
+        >
+          Tab 1
+        </button>
+        <button class="tablinks" onclick="openTab(event, 'tab2')">Tab 2</button>
+        <button class="tablinks" onclick="openTab(event, 'tab3')">Tab 3</button>
+        <button class="tablinks" onclick="openTab(event, 'tab4')">Tab 4</button>
+      </div>
+
+      <div class="content-group">
+        <div id="tab1" class="tab-content">
+          <h3>Tab 1</h3>
+          <p>Tab 1 Content</p>
+        </div>
+
+        <div id="tab2" class="tab-content">
+          <h3>Tab 2</h3>
+          <p>Tab 2 Content</p>
+        </div>
+
+        <div id="tab3" class="tab-content">
+          <h3>Tab 3</h3>
+          <p>Tab 3 Content</p>
+        </div>
+
+        <div id="tab4" class="tab-content">
+          <h3>Tab 4</h3>
+          <p>Tab 4 Content</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
