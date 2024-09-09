@@ -34,3 +34,17 @@ function switchTheme() {
 themeSwitcher.addEventListener('click', switchTheme);
 
 onLoad();
+
+// navbar
+const nav = document.querySelector('#nav');
+const menuIcon = document.querySelector('.menu-icon');
+
+function toggleMenu() {
+  menuIcon.classList.toggle('active');
+  nav.classList.toggle('active');
+}
+
+function hideMenu(){
+  nav.classList.remove('active');
+  menuIcon.classList.remove('active');
+}
