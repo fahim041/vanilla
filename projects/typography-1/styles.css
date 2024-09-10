@@ -345,6 +345,10 @@ h2 {
 
 /* smartphone vertical */
 @media screen and (max-width: 600px) {
+  :root {
+    --letter-spacing-animation: 0.1em;
+  }
+
   .main-image {
     height: auto;
     max-width: 85%;
