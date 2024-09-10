@@ -231,6 +231,10 @@ h2 {
   width: 50ch;
 }
 
+.blog-container p {
+  font-weight: 500;
+}
+
 .blog-item {
   margin-bottom: 50px;
 }
@@ -260,9 +264,9 @@ h2 {
 }
 
 /* media quaries */
-@media screen and (max-width: 1180px){
+@media screen and (max-width: 1180px) {
   :root {
-    --letter-spacing-animation: .2em;
+    --letter-spacing-animation: 0.2em;
   }
 
   nav {
@@ -270,12 +274,13 @@ h2 {
     background-color: var(--background);
   }
 
-  .wave > svg:last-child{
+  .wave > svg:last-child {
     border-bottom: 20px solid #344e41;
   }
 }
 
-@media screen and (min-width: 900px) and (max-width: 1180px) {
+/* tablet horizontal */
+@media screen and (min-width: 800px) and (max-width: 1180px) {
   .main-image {
     height: auto;
     width: 75%;
@@ -289,7 +294,12 @@ h2 {
   }
 }
 
-@media screen and (min-width: 700px) and (max-width: 900px){
+/* tablet  vertical*/
+@media screen and (min-width: 700px) and (max-width: 821px) {
+  nav ul {
+    font-size: 2rem !important;
+  }
+
   .main-image {
     height: auto;
     width: 85%;
@@ -298,7 +308,7 @@ h2 {
     padding: 10px;
   }
 
-  .small-image{
+  .small-image {
     height: auto;
     width: 75%;
     border-width: 5px;
@@ -312,8 +322,75 @@ h2 {
     margin-top: 50vh;
   }
 
-  .blog-container{
+  .blog-container {
     position: relative;
     top: -10%;
+  }
+}
+
+/* smartphone horizontal */
+@media screen and (min-width: 600px) and (max-width: 950px) {
+  nav ul {
+    font-size: 1.25rem;
+  }
+
+  .small-image {
+    height: 70%;
+  }
+
+  #section-4 h2 {
+    margin-top: 15vh;
+  }
+}
+
+/* smartphone vertical */
+@media screen and (max-width: 600px) {
+  .main-image {
+    height: auto;
+    max-width: 85%;
+    border-width: 5px;
+    padding: 5px;
+    top: -45%;
+  }
+
+  .small-image {
+    height: auto;
+    width: 75%;
+    border-width: 5px;
+    padding: 10px;
+    margin: auto 5% !important;
+    position: relative;
+    left: 3.5%;
+  }
+
+  .social-media-icons {
+    font-size: 45px;
+    top: -50px;
+  }
+
+  .blog-container {
+    width: 80%;
+  }
+
+  nav ul {
+    position: relative;
+    left: -20px;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  #section-4 h2 {
+    margin-top: 10vh;
+  }
+
+  .footer {
+    bottom: 10px;
+  }
+
+  .wave > svg {
+    border-bottom: 20px solid transparent;
   }
 }
