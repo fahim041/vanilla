@@ -391,6 +391,6 @@ h2 {
   }
 
   .wave > svg {
-    border-bottom: 20px solid transparent;
+    border-bottom: 20px solid #344e41;
   }
 }
